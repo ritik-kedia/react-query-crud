@@ -20,8 +20,8 @@ function FetchIndividual() {
     return (
         <>
             <div>
-                <ul className='text-white my-10'>
-                    <li key={data.id} className='border-l-2 bg-slate-950 w-1/2 mx-auto p-3 m-2'>
+                <ul className='text-white my-[4.2rem] md:my-10'>
+                    <li key={data.id} className='border-l-2 bg-slate-950 md:w-1/2 mx-auto p-3 m-2'>
                         <p className='text-center text-yellow-600 font-bold'>Post Id Number-{data.id}</p>
                         <p className='my-2'>Id : {data.id}</p>
                         <p><span className='text-yellow-400 font-bold'>Title</span> :- {data.title}</p>

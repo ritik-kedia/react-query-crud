@@ -153,7 +153,7 @@ function FetchRQ() {
                     {data?.map(
                         (d, i) => {
                             return (
-                                <li key={i} className='border-l-2 bg-slate-900 mx-auto w-3/4 my-2 p-2'>
+                                <li key={i} className='border-l-2 bg-slate-900 mx-auto md:w-3/4 my-2 p-2'>
                                     <NavLink to={`/rq/${d.id}`}>
                                         <p className='my-2'>{d.id}.</p>
                                         <p><span className='text-yellow-400 font-bold'>Title</span> :- {d.title}</p>

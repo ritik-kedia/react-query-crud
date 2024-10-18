@@ -39,3 +39,18 @@ export const createPost = (newPost) => {
     return api.post(`/posts`, newPost)
 }
 
+// to Infinite Scrolling
+
+export const fetchUsers = async ({ pageParam = 1 }) => {
+    try {
+        const res = await axios.get(`https://api.github.com/users?per_page=10&page=${pageParam}`);
+        return res.data;
+    } catch (error) {
+        if (error.response && error.response.status === 403) {
+            console.error("Rate limit exceeded. Please try again later.");
+            return [];
+        }
+        throw new Error("Failed to fetch users");
+
+    }
+}

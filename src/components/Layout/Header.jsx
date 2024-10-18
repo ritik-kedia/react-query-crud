@@ -38,6 +38,9 @@ function Header() {
                         <li className='hover:text-purple-600'>
                             <NavLink to={"/rq"}>FetchRQ</NavLink>
                         </li>
+                        <li className='hover:text-purple-600'>
+                            <NavLink to={"/infinite"}>InfiniteScroll</NavLink>
+                        </li>
                     </ul>
                 </div>
 
@@ -53,6 +56,9 @@ function Header() {
                             </li>
                             <li className='hover:text-purple-600'>
                                 <NavLink to={"/rq"} onClick={toggleMenu}>FetchRQ</NavLink>
+                            </li>
+                            <li className='hover:text-purple-600'>
+                                <NavLink to={"/infinite"} onClick={toggleMenu}>InfiniteScroll</NavLink>
                             </li>
                         </ul>
                     </div>
